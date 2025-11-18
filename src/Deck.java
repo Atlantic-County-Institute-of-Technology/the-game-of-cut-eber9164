@@ -49,6 +49,10 @@ public class Deck {
         index = index - 1; // makes 1-52 instead of 0-51
         return deck[index];
     }
+
+
+
+
 //    strDeck
 //    Scanner userCard
 

@@ -1,9 +1,11 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
 //        Card card = new Card(1,13);
 //        System.out.println(card);
+        Random random = new Random();
 
         Deck deck = new Deck();
         deck.populateDeck();
@@ -15,7 +17,10 @@ public class Main {
         System.out.println("Select a Card (Number Only): ");
         int userCard = enterCard.nextInt();  // Read user input
         Card selection = deck.selectCard(userCard);
-        System.out.println(selection);
+        Card randomSelection = deck.selectCard(random.nextInt(53));
+        System.out.println("Your Card: " + selection);
+        System.out.println("Random Card: " + randomSelection);
+
 
 //        Card ran_selection = deck.selectCard(shuffler);
 //        System.out.println(ran_selection);
