@@ -52,7 +52,7 @@ public class Deck {
 
 
 
-
+// final commit
 //    strDeck
 //    Scanner userCard
 
@@ -85,3 +85,4 @@ public class Deck {
 //    deck[i] = new Card(face, suit)
 
 }
+
